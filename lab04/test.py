@@ -1,10 +1,10 @@
-grade1 = []
+grade1 = [] #創建list
 print ("開始輸入A學生的成積，請依照 國文、英文、數學、自然、社會 的順序輸入:")
-for i in range(5):
-    grade1.append(input())
+for i in range(5): #循環五次
+    grade1.append(input()) #增加list元素
 print ("A學生的成績")
 print ("國文:"+grade1[0]+"、英文:"+grade1[1]+"、數學:"+grade1[2]+"、自然:"+grade1[3]+"、社會:"+grade1[4])
-print ("")
+print ("") #換行
 grade2 = []
 print ("開始輸入B學生的成積，請依照 國文、英文、數學、自然、社會 的順序輸入:")
 for i in range(5):
@@ -19,10 +19,10 @@ for i in range(5):
 print ("C學生的成績")
 print ("國文:"+grade3[0]+"、英文:"+grade3[1]+"、數學:"+grade3[2]+"、自然:"+grade3[3]+"、社會:"+grade3[4])
 print ("")
-total =0
-for i in range(0,5):
-    total = total + eval(grade1[i])
-avg = total / 5
+total =0 
+for i in range(0,5): #給定範圍
+    total = total + eval(grade1[i]) #加總成績
+avg = total / 5 #算平均
 print ("A學生平均成績:{}".format(avg))
 total2 =0
 for i in range(0,5):
@@ -34,7 +34,7 @@ for i in range(0,5):
     total3 = total3 + eval(grade3[i])
 avg = total3 / 5
 print ("C學生平均成績:{}".format(avg))
-c_sum = int(grade1[0])+int(grade2[0])+int(grade3[0])
+c_sum = int(grade1[0])+int(grade2[0])+int(grade3[0]) #加總成績
 e_sum = int(grade1[1])+int(grade2[1])+int(grade3[1])
 m_sum = int(grade1[2])+int(grade2[2])+int(grade3[2])
 sc_sum = int(grade1[3])+int(grade2[3])+int(grade3[3])
